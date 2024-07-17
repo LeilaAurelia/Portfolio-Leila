@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.header-left {
+  font-size: 19px;
+  margin: 10px;
+  color: #9c28b1;
+}
+
+.header-right a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #d2d1d1;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #9c28b1;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header-right a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #b897ca;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.header-right a:hover::before {
+  width: 100%;
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-button {
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 80px;
+  background: transparent;
+  border: 2px solid #9c28b1;
+  border-radius: 20%;
+  font-size: 1.5rem;
+  color: #9c28b1;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.back-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #b897ca;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.back-button:hover::before {
+  width: 100%;
+}
+
+main {
+  padding: 50px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 200px;
+}
+
+.content {
+  font-family: "JetBrains Mono";
+  color: #9c28b1;
+  font-size: 0.9rem;
+}
+
+.content ul {
+  font-family: "Montaga";
+  font-size: 1.2rem;
+}
