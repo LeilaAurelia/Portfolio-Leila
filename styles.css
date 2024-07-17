@@ -1,0 +1,245 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.header-left {
+  font-size: 19px;
+  margin: 10px;
+  color: #9c28b1;
+}
+
+.header-right a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #d2d1d1;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #9c28b1;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header-right a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #b897ca;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.header-right a:hover::before {
+  width: 100%;
+}
+
+main {
+  padding: 20px;
+}
+
+.articles-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Colunas automáticas, com no mínimo 200px */
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.article-preview {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-preview h3 {
+  color: #9c28b1;
+  font-family: "JetBrains Mono";
+  font-size: 0.9rem;
+}
+.article-preview p {
+  font-family: "Montaga";
+  font-size: 0.9rem;
+}
+
+.article-preview:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.modal-content h3 {
+  color: #9c28b1;
+  font-family: "JetBrains Mono";
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+h2,
+h3 {
+  color: #9c28b1;
+}
+
+.modal-content p,
+ul,
+li {
+  font-family: "Montserrat";
+}
+
+.fechar {
+  position: absolute;
+  left: 85rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #9c28b1;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal-content p {
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.modal-content a {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.popup-content {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Colunas automáticas, com no mínimo 200px */
+  gap: 10px;
+  padding-bottom: 0px;
+}
+
+.card-body {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-date {
+  color: #888;
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.card-link {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.card-description {
+  color: #333;
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+.card-link {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.card-description {
+  color: #333;
+  font-size: 14px;
+  margin: 8px 0 0;
+}
+
+.view-more {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+}
+
+.instagram-post img {
+  width: 100%;
+}
+.instagram-post {
+  display: none;
+}
+.modal-content img {
+  width: 80%;
+  padding-left: 50px;
+}
