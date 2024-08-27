@@ -2,15 +2,20 @@ window.addEventListener("resize", fecharmodal);
 window.addEventListener("DOMContentLoaded", fecharmodal);
 
 function openModal(modalId) {
-  if (window.innerWidth < 1201) {
-    // Lógica para abrir o modal
-    document.getElementById(modalId).style.display = "none";
-  } else {
-    document.getElementById(modalId).style.display = "flex";
-  }
+  document.getElementById(modalId).style.display = "flex";
 }
+
 function fecharmodal(modalId) {
   document.getElementById(modalId).style.display = "none";
+  if (window.innerWidth <= 1200) {
+    fecharmodal.style.left = "50%";
+    fecharmodal.style.transform = "translateX(-50%)";
+    fecharmodal.style.right = "auto";
+  } else {
+    fecharmodal.style.left = "auto";
+    fecharmodal.style.right = "10px";
+    fecharmodal.style.transform = "none";
+  }
 }
 
 window.onclick = function (event) {
