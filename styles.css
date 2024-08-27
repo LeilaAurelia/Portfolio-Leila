@@ -1,3 +1,11 @@
+@media screen and (max-width: 1200px) {
+  .fechar {
+    top: 10px; /* Mantém a posição no topo */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que fique exatamente no centro */
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
 }
