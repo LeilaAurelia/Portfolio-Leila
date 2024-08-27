@@ -1,7 +1,14 @@
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = "flex";
-}
+window.addEventListener("resize", fecharmodal);
+window.addEventListener("DOMContentLoaded", fecharmodal);
 
+function openModal(modalId) {
+  if (window.innerWidth < 1400) {
+    // Lógica para abrir o modal
+    document.getElementById(modalId).style.display = "none";
+  } else {
+    document.getElementById(modalId).style.display = "flex";
+  }
+}
 function fecharmodal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
