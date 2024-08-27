@@ -2,7 +2,7 @@ window.addEventListener("resize", fecharmodal);
 window.addEventListener("DOMContentLoaded", fecharmodal);
 
 function openModal(modalId) {
-  if (window.innerWidth < 1400) {
+  if (window.innerWidth < 1200) {
     // Lógica para abrir o modal
     document.getElementById(modalId).style.display = "none";
   } else {
