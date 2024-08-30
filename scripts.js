@@ -1,3 +1,5 @@
+
+/*
 window.addEventListener("resize", fecharmodal);
 window.addEventListener("DOMContentLoaded", fecharmodal);
 
@@ -43,3 +45,4 @@ window.onclick = function (event) {
     }
   }
 };
+ */
