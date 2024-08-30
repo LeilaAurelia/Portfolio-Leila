@@ -96,6 +96,11 @@ main {
   flex-direction: column;
 }
 
+.articles-grid,
+.article-preview a {
+  text-decoration: none;
+}
+
 .article-preview h3 {
   color: #9c28b1;
   font-family: "JetBrains Mono";
@@ -327,4 +332,8 @@ li {
 
 .footer-socials a:hover::before {
   width: 100%;
+}
+
+.container-f a {
+  text-decoration: none;
 }
