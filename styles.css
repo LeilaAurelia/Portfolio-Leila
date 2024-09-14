@@ -200,10 +200,31 @@ li {
   padding-bottom: 0px;
 }
 
+.popup-content-video {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Colunas automáticas, com no mínimo 200px */
+  gap: 80px;
+  padding-bottom: 0px;
+}
+
 .card-body {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body-video {
+  padding: 1.5px;
+  border: 1px solid #9b9898;
+  border-radius: 1px;
   cursor: pointer;
   transition: transform 0.2s;
   display: flex;
